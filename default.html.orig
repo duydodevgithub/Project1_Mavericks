@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mavericks</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+</head>
+<body>
+    <!-- nav bar start here -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Mavericks</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#">Signup  <i class="fa fa-user-plus"></i></a></li> -->
+                    <!-- <li><a href="#about">Login  <i class="fa fa-user"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <!-- search bar start here -->
+    <div class="container search_bar">
+        <div class="row">
+            <div class="col-md-6 col-sm-offset-3">
+                <!-- <h2>Custom search field</h2> -->
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+<<<<<<< HEAD
+                        <input type="text" class="form-control input-lg" placeholder="Flight number or Airport ICAO"
+||||||| merged common ancestors
+                        <input type="text" class="form-control input-lg" placeholder="Flight number"
+=======
+                        <input type="text" class="form-control input-lg" placeholder="Flight number or location"
+>>>>>>> 7fc6b808351d56b81c3f2748d7b409e29872f8ea
+                        id="searchInput" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-lg" type="button" id="btn_search">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- content start here -->
+<div class="container map_weather">
+    <div class="row">
+
+    <!-- map start here -->
+        <div class="col-lg-8 map" id="map_opensky"> Track your flight here 
+            <iframe width="100%" height="450px"></iframe>
+        </div>
+
+    <!-- weather start here -->
+        <div class="col-lg-4 weather" id="map_weather_box"> Weather Forecast
+            <ul class="list-group">
+                <li class="list-group-item" ><i class="fa fa-sun-o"></i><strong>&nbsp;Sky Condition: </strong><span id="skyCondition"></span></li>
+                <li class="list-group-item" ><i class="fa fa-bolt"></i><strong>&nbsp;&nbsp; Wind: </strong><span id="wind"></span></li>
+                <li class="list-group-item" ><i class="fa fa-eye-slash"></i><strong>	&nbsp;Visibility: </strong><span id="visibility"></span></li>
+                <li class="list-group-item" ><i class="fa fa-tint"></i><strong>	&nbsp; Temperature: </strong><span id="temperature"></span></li>
+            </ul>
+        </div> 
+
+         <div class="col-lg-4 flight_stat" id="flightstat_box"> Flight Status
+            <ul class="list-group">
+                <li class="list-group-item" ><strong> Airline: </strong><span id="airline"></span></li>                
+                <li class="list-group-item" ><strong> Departure: </strong><span id="departure"></span></li>
+                <li class="list-group-item" ><strong> Destination: </strong><span id="destination"></span></li>
+                <li class="list-group-item" ><strong> Arrival Time: </strong><span id="arrivaltime"></span></li>
+                <li class="list-group-item" ><strong> Status: </strong><span id="status"></span></li>
+            </ul>
+        </div> 
+    </div>
+</div>
+ 
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+ <script type="text/javascript" src="assets/java/airports.js"></script>
+<<<<<<< HEAD
+ <!-- <script type="text/javascript" src="assets/java/main.js"></script>  -->
+||||||| merged common ancestors
+ <script type="text/javascript" src="assets/java/airports2.js"></script>
+ <!-- <script type="text/javascript" src="assets/java/main.js"></script>  -->
+=======
+ <script type="text/javascript" src="assets/java/airports2.js"></script>
+  <!-- <script type="text/javascript" src="assets/java/main.js"></script>   -->
+>>>>>>> 7fc6b808351d56b81c3f2748d7b409e29872f8ea
+ <script type="text/javascript" src="assets/java/avwx.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+body {
+    background: url(../images/jacky-lo-169262.jpg); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.box {
+     padding: 10px; 
+    /* opacity:.5; */
+    /* margin: auto; */ 
+    /* background-color: #1a396b; */
+    background: rgba(26, 55, 102, 0.7);
+    color: whitesmoke;  
+    animation-duration: 2s;
+    animation-name: bounceInDown;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+#box1 {
+    margin-top: 40px;
+} 
+
+
+.content{
+	 padding-top: 5%; 
+}
+.content_header {
+    text-align: center;
+	/* padding-top: 5%;  */
+    
+}
+
+.feature_image {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 20px 20px 5px 20px;
+}
+
+.feature_hotel, .feature_flight, .feature_weather, .feature_restaurant {
+    animation-duration: 5s; 
+    animation-name: bounceInDown;
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+h3 {
+    text-align: center;
+    font-family: 'mr-eaves-xl-modern';
+    text-rendering: optimizelegibility;
+    font-size: 30px;
+}
+
+hr {
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+/* search bar */
+#custom-search-input{
+    padding: 1px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 1px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 15px;
+}
+.search_bar {
+    margin-top: 70px;
+    animation-name: bounceInDown;
+    animation-duration: 2s;
+    /* position: fixed;  */
+}
+#map_opensky {
+    margin-top: 8px;
+}
+.map_weather {
+    margin-top: 30px;
+    margin-bottom: 70px;    
+    background-color:#173e7c;
+    padding: 20px;
+    border: 2px solid lightgray ;
+    animation-duration: 2s;
+    animation-name: slidein;
+
+}
+.list-group-item {
+    color: black;
+}
+.list-group {
+    margin-top: 10px;
+}
+
+iframe {
+    margin-top: 15px;    
+}
+
+#contact {
+    margin-bottom: 40px;
+}
+/* modal start here */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+  color: black;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  color: black;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+#map_weather_box, #flightstat_box {
+    color: orange;
+}
+
+.profile{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.profile-picture {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;  
+    display: block; 
+    width: 120px; 
+    height: 120px;
+    border: 2px solid #51D2B7;
+}
+
+/* .profile:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+} */
+ .caption {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+} 
+
+/* blink effect */
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+ @keyframes blinker {  
+  50% { opacity: 0; }
+} 
+
+/* pulse-grow
+ */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-grow:hover {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}

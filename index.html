@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mavericks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Rain effect css link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moqmar/weather.css/master/weather.min.css">
+    <!-- Bootstrap CSS link -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Google font API -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<!-- navbar start here -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mavericks</a>
+            </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="#">Signup  <i class="fa fa-user-plus"></i></a></li> -->
+                        <li><a href="#" data-toggle="modal" data-target="#login-modal">Login<i class="fa fa-user"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    &nbsp;
+
+<!-- login modal start here -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                <input type="text" name="user" placeholder="Username" id="username">
+                <input type="password" name="pass" placeholder="Password" id="password">
+                <input type="submit" name="login" class="login loginmodal-submit" value="Login" id="login">
+                </form>
+                <div class="login-help">
+                <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- main content for index page start here -->
+<div class="container" id="header">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content_header">
+                 <div class="box" id="box1">
+                    <h1 class="main_page">The Mavericks</h1>
+                    <h3 class="main_page" >Next Generation App for <strong>Flight</strong></h3>
+                    <hr>
+                    <button class="btn btn-default btn-lg main_page"><a href="#" data-toggle="modal" data-target="#login-modal">Get Started!</a> </button>
+                 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+ <!-- Features start here -->
+
+ <div class="container" id="header">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content_header">
+                 <div class="box" id="box1">
+                    <h3 class="#">Application Features</h3>
+                    <div class="row">
+                         <!-- <div class="col-xs-1"></div>  -->
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 hvr-pulse-grow">
+                            <img class="feature_image feature_hotel" src="assets/images/hotel.png">                    
+                            <span class="caption feature_hotel">Hotel</span>                         
+                        </div> 
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 hvr-pulse-grow">
+                            <a href="#" data-toggle="modal" data-target="#login-modal"><img class="feature_image feature_flight" src="assets/images/flight.png"></a>
+                            <span class="caption feature_flight">Flight Tracking</span> 
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 hvr-pulse-grow">
+                            <a href="#" data-toggle="modal" data-target="#login-modal"><img class="feature_image feature_weather" src="assets/images/weather.png"></a>               
+                            <span class="caption feature_weather">Weather Forecast</span>                         
+                        </div> 
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 hvr-pulse-grow">
+                            <img class="feature_image feature_restaurant" src="assets/images/restaurant.png">                    
+                            <span class="caption feature_restaurant">Restaurant</span>                         
+                        </div> 
+                         <!-- <div class="col-xs-1"></div>   -->
+                    </div>
+                                 
+                 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+ <!-- About start here -->
+ <div class="container parallax" id="about">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content">
+                 <div class="box" id="box2">
+                    <h3 class="#">Meet the Mavericks team</h3>
+                        <br>                                           
+                    <p> Mavericks app helps you track flights live, it provides users weather information as well as commercial flight status and details. For aviation’s enthusiasts, Mavericks provides METAR data to help you evaluate weather information to determine flight conditions using wind & velocity, temperature and sky conditions. Enjoy!</p>
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 profile hvr-pulse-grow">
+                                <img class="img-circle profile-picture" src="assets/images/frank.png">
+                                <span class="caption">Frank Matos</span>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 profile hvr-pulse-grow">
+                                <img class="img-circle profile-picture" src="assets/images/jason.png">
+                                <span class="caption">Jason McKinney</span>                              
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 profile hvr-pulse-grow">
+                                <img class="img-circle profile-picture" src="assets/images/duy.png">
+                                <span class="caption">Duy Do</span>                             
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 profile hvr-pulse-grow">
+                                <img class="img-circle profile-picture" src="assets/images/firas.png">
+                                <span class="caption">Firas AlOmairi</span>                              
+                            </div> 
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 profile hvr-pulse-grow">
+                                <img class="img-circle profile-picture" src="assets/images/1.jpg">  
+                                <span class="caption">Aamir Laasi</span>
+                            </div> 
+                            <div class="col-lg-1"></div> 
+                        </div>     
+                    </div>
+                        <!-- <br>
+                        <h3 class="#">Technology & Product</h1> -->
+                 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <!-- Contact start here -->
+ <div class="container" id="contact">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content">
+                 <div class="box" id="box3">
+                    <h3 class="#">Contact Us</h3>  
+                        <br>                   
+                     <form >
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">First Name</label>
+                            <input type="password" class="form-control" id="firstname" placeholder="John">
+                        </div>
+                        <div class="form-group" >
+                            <label for="exampleInputPassword1">Last name</label>
+                            <input type="password" class="form-control" id="lastname" placeholder="Deep">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Your message</label>                            
+                            <textarea class="form-control" rows="3"></textarea> 
+                        </div>
+                        <div class="form-group"> 
+                            <button type="submit" class="btn btn-default" id="btn_contact">Submit</button>
+                        </div>
+                     </form>
+                 </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="assets/java/animate.js"></script>  
+ <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+ <script type="text/javascript" src="assets/java/avwx.js"></script>
+ <script type="text/javascript" src="assets/java/main.js"></script> 
+ <script type="text/javascript" src="assets/java/auth.js"></script> 
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
